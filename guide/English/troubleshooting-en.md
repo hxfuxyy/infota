@@ -64,7 +64,7 @@
 
 - Check your internet connection and retry
 - Make sure you are on the latest stable release — beta/unofficial builds may not receive OTA
-- Update manually via Recovery (Option A) using the latest ZIP from [Releases](https://github.com/hxfuxyy/infota/releases/latest)
+- Update manually via Recovery (Option A) using the latest ZIP from [Releases](https://github.com/hxfuxyy/InfinityX-XiaomiPad5/releases/latest)
 
 </details>
 

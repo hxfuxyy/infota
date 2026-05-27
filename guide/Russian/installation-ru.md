@@ -7,10 +7,14 @@
 
 ## Необходимое
 
-Скачайте следующие файлы из [**Releases**](https://github.com/hxfuxyy/infota/releases/latest):
+> [!IMPORTANT]
+> Перед тем как продолжить, загрузчик вашего устройства должен быть разблокирован. Если вы ещё не сделали этого — сначала выполните **[Руководство по разблокировке загрузчика](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/unlock-bootloader-en.md)**. **Это приведёт к полному удалению данных с устройства.**
 
-- **InfinityX.zip** — пакет ROM для ADB sideload
-- **boot.img**, **vendor_boot.img**, **dtbo.img** — нужны только для **Варианта A (ADB Sideload)**
+Загрузите следующее перед началом:
+
+- **[Android Platform Tools](https://developer.android.com/studio/releases/platform-tools)** — содержит команды `adb` и `fastboot`, используемые в этом руководстве
+- **InfinityX.zip** — пакет ROM для ADB sideload — из [**Releases**](https://github.com/hxfuxyy/InfinityX-XiaomiPad5/releases/latest)
+- **boot.img**, **vendor_boot.img**, **dtbo.img** — нужны только для **Варианта A (ADB Sideload)** — также из [**Releases**](https://github.com/hxfuxyy/InfinityX-XiaomiPad5/releases/latest)
 
 Если вы планируете использовать **Auto Installer**, вам нужно только скачать его из **закреплённого сообщения** в Telegram-чате [t.me/InfinityXnabu](https://t.me/InfinityXnabu) — больше ничего не нужно.
 
@@ -22,26 +26,26 @@
 > Этот шаг нужен только для **Варианта A (ADB Sideload)**. Если вы планируете использовать **Auto Installer**, сразу переходите к [Варианту B](#вариант-b-auto-installer-скрипты-для-пк).
 > Этот шаг можно пропустить, если у вас уже установлено совместимое кастомное рекавери.
 
-1. На компьютере откройте командную строку (Windows) или терминал (Linux/macOS) и введите:
-```cmd
+1. На компьютере откройте командную строку (Windows) или терминал (Linux/macOS) и выполните:
+```bash
 adb -d reboot bootloader
 ```
 > Также можно выключить планшет и удерживать **Уменьшение громкости + Питание** для входа в fastboot.
 
 2. Когда устройство в режиме fastboot, проверьте, что оно определяется:
-```cmd
+```bash
 fastboot devices
 ```
 
 3. Прошейте скачанные файлы образов:
-```cmd
+```bash
 fastboot flash boot boot.img
 fastboot flash vendor_boot vendor_boot.img
 fastboot flash dtbo dtbo.img
 ```
 
 4. Перезагрузитесь в рекавери:
-```cmd
+```bash
 fastboot reboot recovery
 ```
 
@@ -67,7 +71,7 @@ fastboot reboot recovery
 1. На устройстве нажмите **Apply Update > Apply from ADB**.
 
 2. На компьютере выполните:
-```cmd
+```bash
 adb -d sideload InfinityX.zip
 ```
 
@@ -86,13 +90,13 @@ adb -d sideload InfinityX.zip
 1. **Распакуйте** `.zip` Auto Installer в папку без пробелов и специальных символов в пути.
 
 2. Загрузите планшет в режим fastboot:
-```cmd
+```bash
 adb -d reboot bootloader
 ```
 > Или удерживайте **Уменьшение громкости + Питание** до появления экрана загрузчика.
 
 3. Проверьте, что устройство определяется:
-```cmd
+```bash
 fastboot devices
 ```
 > Если не отображается — попробуйте другой кабель/порт или переустановите [Google USB Drivers](https://developer.android.com/studio/run/win-usb).
@@ -100,6 +104,8 @@ fastboot devices
 4. Запустите соответствующий скрипт:
    - `install_..._windows.bat` — чистая установка
    - `update_..._windows.bat` — обновление существующего ROM
+
+> `...` в названии скрипта — это версия ROM и дата (например, `install_3.10_20260508_windows.bat`). Точное имя файла будет соответствовать содержимому скачанного ZIP.
 
 Внимательно следуйте инструкциям на экране.
 
@@ -114,12 +120,12 @@ fastboot devices
 1. **Распакуйте** `.zip` Auto Installer в папку без пробелов и специальных символов в пути.
 
 2. Загрузите планшет в режим fastboot:
-```cmd
+```bash
 adb -d reboot bootloader
 ```
 
 3. Проверьте, что устройство определяется:
-```cmd
+```bash
 fastboot devices
 ```
 
@@ -128,6 +134,8 @@ fastboot devices
 sudo bash ./install_..._linux.sh    # чистая установка
 sudo bash ./update_..._linux.sh     # обновление существующего ROM
 ```
+
+> `...` в названии скрипта — это версия ROM и дата. Точное имя файла будет соответствовать содержимому скачанного ZIP.
 
 > [!WARNING]
 > **Держите терминал открытым и следите за прогрессом.** Раннее закрытие может прервать прошивку.
@@ -143,7 +151,7 @@ sudo bash ./update_..._linux.sh     # обновление существующ�
 
 Если вы обновляетесь до новой версии, сброс до заводских настроек **не требуется**.
 
-- **Через OTA:** *Настройки > Система > Обновление*
+- **Через OTA:** *Настройки > Система > Обновление системы*
 - **Через рекавери:** Выполните [Вариант A](#вариант-a-adb-sideload) без Factory Reset.
 - **Через Auto Installer:** Запустите скрипт `update_...` из ZIP Auto Installer.
 

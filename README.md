@@ -25,23 +25,23 @@
 ## Get Started
 
 - [**`📥 Installation`**](guide/English/installation-en.md)
+- [**`📱 Rooting`**](guide/English/root-en.md)
 
 ## Miscellaneous
 
 - [**`❗ Troubleshooting`**](guide/English/troubleshooting-en.md)
-- [**`📱 Rooting`**](guide/English/root-en.md)
 - [**`🔓 Bootloader unlocking guide`**](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/unlock-bootloader-en.md)
 - [**`💾 TWRP Guide`**](https://github.com/ArKT-7/twrp_device_xiaomi_nabu/releases/tag/mod-win)
 
 ## Maintainers
 
-[<img alt="hxfuxyy" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/190541853?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/hxfuxyy)
+[<img alt="crss5G" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/190541853?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/hxfuxyy)
 
 ## Special thanks
 
 - [**ProjectInfinity-X**](https://github.com/ProjectInfinity-X) — for base ROM source
-- [**ArKT-7**](https://github.com/ArKT-7) — for AutoInstaller-Forge, TWRP & many Fixes
+- [**ArKT-7**](https://github.com/ArKT-7) — for AutoInstaller-Forge, TWRP & many fixes
 - [**dev-harsh1998**](https://github.com/dev-harsh1998/android_device_xiaomi_nabu) — for device tree
 - [**KernelSU-Next team**](https://github.com/KernelSU-Next/KernelSU-Next) — for KernelSU-Next root solution
 - [**erdilS & contributors from nabu guide**](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/graphs/contributors) — for documentation structure reference
-- Everyone in [telegram chat](https://t.me/InfinityXnabu) who tests, reports bugs, and keeps the project alive ❤️
+- Everyone in [Telegram chat](https://t.me/InfinityXnabu) who tests, reports bugs, and keeps the project alive ❤️

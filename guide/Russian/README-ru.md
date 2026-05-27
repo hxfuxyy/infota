@@ -2,7 +2,7 @@
 
 # Установка InfinityX на Xiaomi Pad 5
 
-[![Телеграм](https://img.shields.io/badge/Chat-Telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/InfinityXnabu)
+[![Telegram](https://img.shields.io/badge/Chat-Telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/InfinityXnabu)
 [![Донат](https://img.shields.io/badge/Donate-Support%20Us-orange.svg?style=flat-square)](https://linktr.ee/zxcwsurx)
 [![Последний релиз](https://img.shields.io/github/v/release/hxfuxyy/InfinityX-XiaomiPad5?label=Latest%20Release&style=flat-square)](https://github.com/hxfuxyy/InfinityX-XiaomiPad5/releases/latest)
 [![Всего скачано](https://img.shields.io/github/downloads/hxfuxyy/InfinityX-XiaomiPad5/total?label=Total%20Downloads&style=flat-square)](https://github.com/hxfuxyy/InfinityX-XiaomiPad5/releases)
@@ -25,23 +25,23 @@
 ## Начало работы
 
 - [**`📥 Установка`**](installation-ru.md)
+- [**`📱 Получение root-прав`**](root-ru.md)
 
 ## Дополнительно
 
 - [**`❗ Решение проблем`**](troubleshooting-ru.md)
-- [**`📱 Получение root-прав`**](root-ru.md)
 - [**`🔓 Разблокировка загрузчика`**](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/unlock-bootloader-en.md)
 - [**`💾 Руководство по TWRP`**](https://github.com/ArKT-7/twrp_device_xiaomi_nabu/releases/tag/mod-win)
 
 ## Мейнтейнеры
 
-[<img alt="hxfuxyy" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/190541853?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/hxfuxyy)
+[<img alt="crss5G" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/190541853?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/hxfuxyy)
 
 ## Благодарности
 
 - [**ProjectInfinity-X**](https://github.com/ProjectInfinity-X) — базовый ROM
 - [**ArKT-7**](https://github.com/ArKT-7) — AutoInstaller-Forge, TWRP & много фиксов
-- [**dev-harsh1998**](https://github.com/dev-harsh1998/android_device_xiaomi_nabu) — древо планшета
+- [**dev-harsh1998**](https://github.com/dev-harsh1998/android_device_xiaomi_nabu) — device tree
 - [**KernelSU-Next team**](https://github.com/KernelSU-Next/KernelSU-Next) — рут-решение KernelSU-Next
 - [**erdilS и контрибьюторы гайда nabu**](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/graphs/contributors) — структура документации
-- Всем в [чате телеграм](https://t.me/InfinityXnabu), кто тестирует, репортит баги и поддерживает проект живым ❤️
+- Всем в [Telegram-чате](https://t.me/InfinityXnabu), кто тестирует, репортит баги и поддерживает проект живым ❤️

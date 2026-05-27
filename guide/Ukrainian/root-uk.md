@@ -30,8 +30,8 @@
 ### Крок 1: Завантажтесь у fastboot
 
 Вимкніть пристрій і утримуйте **Зменшення гучності + Живлення**, або виконайте:
-```cmd
-adb reboot bootloader
+```bash
+adb -d reboot bootloader
 ```
 
 Підключіть пристрій до ПК через USB.
@@ -40,9 +40,14 @@ adb reboot bootloader
 
 ### Крок 2: Завантажте образ рекавері
 
-Замініть `path\to\recovery.img` на фактичний шлях до завантаженого образу рекавері:
-```cmd
+Замініть плейсхолдер на фактичний шлях до завантаженого образу рекавері:
+
+```bash
+# Windows:
 fastboot boot path\to\recovery.img
+
+# Linux / macOS:
+fastboot boot path/to/recovery.img
 ```
 
 ---
@@ -50,15 +55,20 @@ fastboot boot path\to\recovery.img
 ### Крок 3: Прошийте Magisk через рекавері
 
 Завантажте `magisk.apk` на ПК і виконайте:
-```cmd
+
+```bash
+# Windows:
 adb push path\to\magisk.apk /tmp/magisk.zip && adb shell twrp install /tmp/magisk.zip
+
+# Linux / macOS:
+adb push path/to/magisk.apk /tmp/magisk.zip && adb shell twrp install /tmp/magisk.zip
 ```
 
 ---
 
 ### Крок 4: Перезавантажтесь в Android
 
-```cmd
+```bash
 adb reboot
 ```
 

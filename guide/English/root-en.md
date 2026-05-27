@@ -30,8 +30,8 @@ This is the easiest method. No PC required.
 ### Step 1: Boot into fastboot
 
 Power off the device and hold **Volume Down + Power**, or run:
-```cmd
-adb reboot bootloader
+```bash
+adb -d reboot bootloader
 ```
 
 Connect the device to your PC via USB.
@@ -40,9 +40,14 @@ Connect the device to your PC via USB.
 
 ### Step 2: Boot the recovery image
 
-Replace `path\to\recovery.img` with the actual path to the downloaded recovery image:
-```cmd
+Replace the placeholder with the actual path to your downloaded recovery image:
+
+```bash
+# Windows:
 fastboot boot path\to\recovery.img
+
+# Linux / macOS:
+fastboot boot path/to/recovery.img
 ```
 
 ---
@@ -50,15 +55,20 @@ fastboot boot path\to\recovery.img
 ### Step 3: Flash Magisk via recovery
 
 Download `magisk.apk` to your PC and run:
-```cmd
+
+```bash
+# Windows:
 adb push path\to\magisk.apk /tmp/magisk.zip && adb shell twrp install /tmp/magisk.zip
+
+# Linux / macOS:
+adb push path/to/magisk.apk /tmp/magisk.zip && adb shell twrp install /tmp/magisk.zip
 ```
 
 ---
 
 ### Step 4: Reboot into Android
 
-```cmd
+```bash
 adb reboot
 ```
 
